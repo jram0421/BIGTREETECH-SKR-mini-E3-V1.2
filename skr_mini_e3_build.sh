@@ -1,9 +1,8 @@
 #!/bin/sh
 #
-# SKR mini E3 V1.2  -  Marlin 2.0  -  firmware build script
+# SKR mini E3 V1.2  -  Marlin 2.0 Bugfix -  firmware build script
 #
 # Copyright (c) 2019-2020 Pascal de Bruijn
-# Forked by jram0421 to add support for Marlin 2.0.X Bugfix branch
 #
 
 
@@ -90,9 +89,9 @@ sed -i 's@.*#define MANUAL_Y_HOME_POS .*@#define MANUAL_Y_HOME_POS -4@g' ${MARLI
 
 # personal tweaks
 sed -i 's@#define STRING_CONFIG_H_AUTHOR .*@#define STRING_CONFIG_H_AUTHOR "(SKR mini E3)"@' ${MARLIN_DIR}/Marlin/Configuration.h
-sed -i 's@#define CUSTOM_MACHINE_NAME .*@#define CUSTOM_MACHINE_NAME "SKR mini E3"@' ${MARLIN_DIR}/Marlin/Configuration.h
+sed -i 's@#define CUSTOM_MACHINE_NAME .*@#define CUSTOM_MACHINE_NAME "ENDER 3 PRO WITH ABL"@' ${MARLIN_DIR}/Marlin/Configuration.h
 
-sed -i 's@.*#define SHOW_BOOTSCREEN@//#define SHOW_BOOTSCREEN@' ${MARLIN_DIR}/Marlin/Configuration.h
+sed -i 's@.*#define SHOW_BOOTSCREEN@#define SHOW_BOOTSCREEN@' ${MARLIN_DIR}/Marlin/Configuration.h
 sed -i 's@.*#define SHOW_CUSTOM_BOOTSCREEN@//#define SHOW_CUSTOM_BOOTSCREEN@' ${MARLIN_DIR}/Marlin/Configuration.h
 sed -i 's@.*#define CUSTOM_STATUS_SCREEN_IMAGE@//#define CUSTOM_STATUS_SCREEN_IMAGE@' ${MARLIN_DIR}/Marlin/Configuration.h
 
