@@ -3,6 +3,7 @@
 # SKR mini E3 V1.2  -  Marlin 2.0  -  firmware build script
 #
 # Copyright (c) 2019-2020 Pascal de Bruijn
+# Forked by jram0421 to add support for Marlin 2.0.X Bugfix branch
 #
 
 
