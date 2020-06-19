@@ -7,7 +7,7 @@
 
 
 
-BRANCH=2.0.x
+BRANCH=bugfix-2.0.x
 
 
 
@@ -103,6 +103,7 @@ sed -i 's@.*#define JUNCTION_DEVIATION_MM .*@  #define JUNCTION_DEVIATION_MM 0.0
 sed -i 's@.*#define S_CURVE_ACCELERATION@#define S_CURVE_ACCELERATION@g' ${MARLIN_DIR}/Marlin/Configuration.h
 sed -i 's@.*#define LIN_ADVANCE@#define LIN_ADVANCE@g' ${MARLIN_DIR}/Marlin/Configuration_adv.h
 sed -i 's@.*#define LIN_ADVANCE_K .*@  #define LIN_ADVANCE_K 0@g' ${MARLIN_DIR}/Marlin/Configuration_adv.h
+sed -i 's@.*#define EXPERIMENTAL_SCURVE@#define EXPERIMENTAL_SCURVE@g' ${MARLIN_DIR}/Marlin/Configuration_adv.h
 
 sed -i 's@.*#define ENDSTOPS_ALWAYS_ON_DEFAULT@#define ENDSTOPS_ALWAYS_ON_DEFAULT@g' ${MARLIN_DIR}/Marlin/Configuration_adv.h
 
